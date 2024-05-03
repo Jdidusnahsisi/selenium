@@ -1,0 +1,14 @@
+from selenium import webdriver
+import time
+from selenium.webdriver.common.keys import keys
+print("sampletest")
+driver=webdriver.Edge()
+driver.maximize_window()
+driver.get('https://mydy.dypatil.edu')
+username_input=driver.find_elements_by_id('username')
+password_input=driver.find_elements_by_id('password')
+username_input.send_keys('vai.gaw.rt21@dypatil.edu')
+password_input.send_keys('dypatil@123')
+password_input.send_keys(Keys.RETURN)
+driver.close()
+print(" sampletest successfully ")
